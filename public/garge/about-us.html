@@ -1,0 +1,782 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,900;1,800&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=PT+Sans+Caption:wght@400;700&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,900;1,800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>About Gaarage Guru</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+	<body>
+		<header>
+			<div class="container">
+				<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="index.php">
+							<img src="./img/gaarage-guru-logo.png" alt=""> Gaarage Guru</a>
+						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="location-option">
+							<form action="" class="location-form">
+								<select id="location">
+									<option value="jaipur">Jaipur</option>
+									
+								</select>
+							</form>
+						</div>
+						<div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+							<ul class="navbar-nav mb-2 mb-lg-0">
+								<li class="nav-item"> <a class="nav-link" aria-current="page" href="./index.php">Home</a>
+								</li>
+								<li class="nav-item"> <a class="nav-link active" href="#">About Us</a>
+								</li>
+								<li class="nav-item"> <a class="nav-link" href="./service.html">Services</a>
+								</li>
+								<li class="nav-item"> <a class="nav-link" href="./contact.html">Contact Us</a>
+								</li>
+							</ul>
+						</div>
+						<div class="emergency-red-btn">
+							<a href="tel:74259 16088"><button type="button">Emergency</button></a>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<!-- banner section start -->
+		<section id="header-banner">
+			<div class="container">
+				<div class="header-banner-div">
+					<div class="row">
+						<div class="col-lg-7">
+							<div class="banner-left-div" id="about-us-left-banner-div">
+								<figure>
+									<img src="./img/about-us-banner-img.png" alt="">
+								</figure>
+							</div>
+						</div>
+						<div class="col-lg-5">
+							<div class="banner-right-div">
+								<form action="" class="garrage-main-form">
+									<div class="form-car-img">
+										<img src="./img/form-car-img.png" alt="">
+										<div class="car-under-input">
+											<input type="text" placeholder="RJ-NC-8747">
+											<span> <i class="fa fa-star"></i></span> 
+										</div>
+									</div>
+									<input class="mob-no" type="text" placeholder="Enter Mobile No">
+									<button class="login">LOGIN</button>
+									<button type="button" class="signin" data-bs-toggle="modal" data-bs-target="#exampleModal">SIGN IN</button>
+								<!-- sign-in pop start -->
+								  <div class="modal  fade sign-in-modal-box" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog modal-dialog-centered">
+									  <div class="modal-content">
+										<div class="modal-header">
+										  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+										</div>
+										<div class="modal-body">
+										 <div class="sign-in-logo">
+											<img src="./img/sign-in-gaarage-logo.svg" alt="">
+											 <h3>Sign In</h3>
+										 </div>
+										 <div class="form-modal-div">
+											<form>
+												<div class="row">
+													<div class="col-sm-6">
+														<div class="form-group">
+															<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Full Name" required>
+														</div>
+													</div>
+													<div class="col-sm-6">
+														<div class="form-group">
+															<input type="text" class="form-control" id="exampleFormControlInput2" placeholder="Phone Number" required>
+														</div>
+													</div>
+													<div class="col-sm-6">
+														<div class="form-group">
+															<input type="text" class="form-control" id="exampleFormControlInput3" placeholder="Vehicle Number" required>
+														</div>
+													</div>
+													<div class="col-sm-6">
+														<div class="form-group">
+															<input type="text" class="form-control" id="exampleFormControlInput4" placeholder="Model Number" required>
+														</div>
+													</div>
+													<div class="col-sm-12">
+														<div class="form-group">
+															<input type="email" class="form-control" id="exampleFormControlInput5" placeholder="Email Address" required>
+														</div>
+													</div>
+													
+													<div class="col-12">
+														<div class="form-group">
+															<button type="submit">SIGN IN</button>
+														</div>
+													</div>
+												</div>
+											</form>
+										 </div>
+										</div>
+										
+									  </div>
+									</div>
+								  </div>
+								  
+								<!-- sign-in pop end -->
+
+									<div class="form-rating-div">
+										<div class="row">
+											<div class="col-6">
+												<div class="rating-div">
+													<h6><img src="./img/rating-star.png" alt=""> 4.5/5</h6>
+													<p>Based on 22000+
+														<br>Reviews</p>
+												</div>
+											</div>
+											<div class="col-6">
+												<div class="review-div">
+													<h6>5000+</h6>
+													<p>Based on 3200+
+														<br>Reviews</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- header banner section end -->
+		<!-- About us section start -->
+		<section class="about-us">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-6">
+						<div class="about-us-leftside-div">
+							<img src="./img/about-us-section-img.png" alt="">
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="about-us-rightside-div">
+							<h3>About Us</h3>
+							<p>Gaarage Guru is technology based platform providing vehicle repair,service ,Insurance claim assistance, breakdown.End to end solution provider for all vehicles related problems through our approved channel partners.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- About us section end -->
+		<!-- services section start -->
+		<section class="services">
+			<div class="container">
+				<div class="services-inner">
+					<div class="looking-us-div">
+						<div class="what-you-looking">
+							<h3>What are you looking us.</h3>
+							<div class="search-div">
+								<form class="search-service" action="#">
+									<input type="text" placeholder="Search Services" name="search">
+									<button type="submit"><i class="fa fa-search"></i>
+									</button>
+								</form>
+							</div>
+						</div>
+						<div class="btn-sr-ct">
+							<a href="#"><button>SENIOR CITIZEN</button></a>
+						</div>
+					</div>
+					<div class="all-services">
+						<h3>May I help you</h3>
+						<div class="row">
+							<div class="col-md-3">
+								<a href="/service.html">
+									<div class="all-services-inner">
+										<img src="./img/service.png" alt="">
+										<h6>Services</h6>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-3">
+								<a href="https://www.iassure.com/" target="_blank">
+									<div class="all-services-inner">
+										<img src="./img/insurance.png" alt="">
+										<h6>Insurance</h6>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-3">
+								<a href="#">
+									<div class="all-services-inner">
+										<img src="./img/repair.png" alt="">
+										<h6>Repair</h6>
+									</div>
+								</a>
+							</div>
+							<div class="col-md-3">
+								<a href="#">
+									<div class="all-services-inner">
+										<img src="./img/car-boutique.png" alt="">
+										<h6>Car Boutique</h6>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="sos-btn">
+						<a href="#"><button>SOS</button></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- services section end -->
+		<!-- benefits section start -->
+		<section class="benefits">
+			<div class="container">
+				<div class="benefits-top-content">
+					<h3>Gaarage Guru Benefits</h3>
+				</div>
+				<div class="all-benefits">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="all-benefits-inner">
+								<img src="./img/ab-spare-parts.png" alt="">
+								<p>Original Spare Parts</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="all-benefits-inner">
+								<img src="./img/ab-insurance.png" alt="">
+								<p>Insurance</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="all-benefits-inner">
+								<img src="./img/ab-claim-assistance.png" alt="">
+								<p>Claim Assistance</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="all-benefits-inner">
+								<img src="./img/ab-warranty.png" alt="">
+								<p>Additional Warranty</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="all-benefits-inner">
+								<img src="./img/ab-record-car service.png" alt="">
+								<p>Record for your car service</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="all-benefits-inner">
+								<img src="./img/ab-payment.png" alt="">
+								<p>Online Payment</p>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="all-benefits-inner">
+								<img src="./img/ab-reminders.png" alt="">
+								<p>Digital reminders for timely service</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- benefits section end -->
+		<!-- trending section slider start-->
+		<section class="owl-slider trending-service">
+			<div class="container">
+				<div class="top-trending-div">
+					<h3>Trending Services</h3>
+					<p>Most booked services around you</p>
+				</div>
+				<div class="owl-carousel owl-theme owl-loaded">
+					<div class="owl-stage-outer">
+						<div class="owl-stage">
+							<div class="owl-item">
+								<div class="item1 all-item">
+									<a href="#">
+										<p class="trending-btn">Trending</p>
+										<div class="div-img">
+											<img src="./img/trending-img1.png" alt="">
+										</div>
+										<h6>Periodic Service</h6>
+										<p>Improves Car Performance</p>
+										<hr>
+									</a>
+									<div class="book-now-btn">
+										<a href="#"> Book Now</a>
+									</div>
+								</div>
+							</div>
+							<div class="owl-item">
+								<div class="item2 all-item">
+									<a href="#">
+										<p class="trending-btn">Trending</p>
+										<div class="div-img">
+											<img src="./img/trending-img2.png" alt="">
+										</div>
+										<h6>Car Detailing</h6>
+										<p>Enhance Car’s Value By 40%</p>
+										<hr>
+									</a>
+									<div class="book-now-btn">
+										<a href="#"> Book Now</a>
+									</div>
+								</div>
+							</div>
+							<div class="owl-item">
+								<div class="item3 all-item">
+									<a href="#">
+										<p class="trending-btn">Trending</p>
+										<div class="div-img">
+											<img src="./img/trending-img3.png" alt="">
+										</div>
+										<h6>Ac Services</h6>
+										<p>Better Cooling Guaranty</p>
+										<hr>
+									</a>
+									<div class="book-now-btn">
+										<a href="#"> Book Now</a>
+									</div>
+								</div>
+							</div>
+							<div class="owl-item">
+								<div class="item4 all-item">
+									<a href="#">
+										<p class="trending-btn">Trending</p>
+										<div class="div-img">
+											<img src="./img/trending-img4.png" alt="">
+										</div>
+										<h6>Lights & Glass</h6>
+										<p>50% Enhanced Visibility</p>
+										<hr>
+									</a>
+									<div class="book-now-btn">
+										<a href="#"> Book Now</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="owl-controls">
+						<div class="owl-nav">
+							<div class="owl-prev">
+								<img src="./img/left-arrow.png" alt="">
+							</div>
+							<div class="owl-next">
+								<img src="./img/right-arrow.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- trending section slider end -->
+		<!-- app link section start -->
+		<section class="app-link-download-section">
+			<div class="container">
+				<div class="app-link">
+					<div class="row align-items-center">
+						<div class="col-md-12 col-lg-5">
+							<div class="app-link-img">
+								<img src="./img/downlaod-app.png" alt="">
+							</div>
+						</div>
+						<div class="col-md-12 col-lg-7">
+							<div class="app-links">
+								<h4>Download the App <span>( Coming soon... )</span></h4>
+								<p>Choose and book a seamless car service experience and get upto Rs 500 off with the GaarageGuru App</p>
+								<h6>Get the App</h6>
+								<div class="link-store-div">
+									<ul>
+										<li>
+											<a href="">
+												<img src="./img/playstore-link.png" alt="">
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<img src="./img/app-store-link.png" alt="">
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="link-form">
+									<form action="" id="sendLinkForm">
+										<div class="get-Number">
+											<div class="get-Number-bx"> <span>+91 </span>
+												<input type="text" name="number" id="mobileNumber" maxlength="10" placeholder="Mobile Number">
+											</div>
+											<button type="button" onclick="sendAppLink">Get App Link</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- app link section end -->
+		<!-- expert near slider start-->
+		<section class="owl-slider expert-near-slider">
+			<div class="container">
+				<div class="top-expert-div">
+					<img src="./img/slider-logo.png" alt="">
+					<h3>Gaarage Guru Expert Near by you</h3>
+				</div>
+				<div class="owl-carousel owl-theme owl-loaded">
+					<div class="owl-stage-outer">
+						<div class="owl-stage">
+							<div class="owl-item">
+								<a href="#">
+									<div class="item1">
+										<img src="./img/expert-img1.png" alt="">
+										<div class="expert-content-div">
+											<h6>TROUBLES WITH <br> 
+										YOUR swift?</h6>
+											<p>Highly Trained Mechanics</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="owl-item">
+								<a href="#">
+									<div class="item2">
+										<img src="./img/expert-img2.png" alt="">
+										<div class="expert-content-div">
+											<h6>LUXE EXPERIENCE FOR <br> YOUR Accent!</h6>
+											<p>State Of The Art Workshops</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="owl-item">
+								<a href="#">
+									<div class="item3">
+										<img src="./img/expert-img3.png" alt="">
+										<div class="expert-content-div">
+											<h6>GET YOUR Nexon <br>
+										SERVICED!</h6>
+											<p>6 Months Warranty</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="owl-item">
+								<a href="#">
+									<div class="item4">
+										<img src="./img/expert-img4.png" alt="">
+										<div class="expert-content-div">
+											<h6>AN EXPERIENCE YOUR <br> i20 DESERVES!</h6>
+											<p>24X7 Customer Support</p>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="owl-controls">
+						<div class="owl-nav">
+							<div class="owl-prev">
+								<img src="./img/left-arrow.png" alt="">
+							</div>
+							<div class="owl-next">
+								<img src="./img/right-arrow.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- expert near slider end -->
+		<!-- refer section start -->
+		<section class="refer">
+			<div class="container">
+				<div class="refer-div">
+					<div class="row align-items-center">
+						<div class="col-md-12 col-lg-5" id="top-refer-mob-div">
+							<div class="refer-left">
+								<img src="./img/refer-earn 1.png" alt="">
+							</div>
+						</div>
+						<div class="col-md-12 col-lg-7" id="bottom-refer-mob-div">
+							<div class="refer-right">
+								<h4>Earn 500 Points for every Friend you Refer</h4>
+								<p>Get a friend to start using GaarageGuru</p>
+								<a href="#"><button>Refer Now</button></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- refer section end -->
+		<!-- FAQ section start -->
+		<section class="faq">
+			<div class="container">
+				<h2>Frequently Asked Questions </h2>
+				<div class="all-questions">
+					<div class="m-4">
+						<div class="accordion" id="myAccordion">
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingOne">
+                            <button type="button" class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne">What is the standard time for vehicle service?</button>									
+                        </h2>
+								<div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+									<div class="card-body">
+										<p></p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingTwo">
+                            <button type="button" class="accordion-button  collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">Do you have Pick up and Drop facility?</button>
+                        </h2>
+								<div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+									<div class="card-body">
+										<p></p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingThree">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree">What is the recommended time and km for next service?</button>                     
+                        </h2>
+								<div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+									<div class="card-body">
+										<p></p>
+									</div>
+								</div>
+							</div>
+							<div class="accordion-item">
+								<h2 class="accordion-header" id="headingFour">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour">What is the after Service assurance for the same defect?
+                            </button>									
+                        </h2>
+								<div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#myAccordion">
+									<div class="card-body">
+										<p></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- FAQ section end -->
+		<!-- custom repair section start -->
+		<section class="custom-repair">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-12 col-lg-6" id="repair-mob-div">
+						<div class="custom-repair-left-div">
+							<img src="./img/custom-repair.png" alt="">
+						</div>
+					</div>
+					<div class="col-md-12 col-lg-6">
+						<div class="custom-repair-right-div">
+							<h5>Looking for Custom Repairs for your car in Jaipur?</h5>
+							<p>Tell us your requirements and get a call back within 2 hrs with a personalised quotation exclusively.</p>
+							<a href="#"><button>Go</button></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- custom repair section end -->
+		<!-- find on map section start -->
+		<section class="find-on-map">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="map-left-div" style="width: 100%; overflow: hidden; height: 260px;">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7116.181292616879!2d75.7318367259854!3d26.900618150447908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db4bd31498575%3A0x4aca340be2184f84!2sChitrakoot%2C%20Jaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1638417063230!5m2!1sen!2sin" width="100%" height="410" style="border:0; margin-top: -150px;" scrolling="no" frameborder="0" 
+							allowfullscreen="" loading="lazy"></iframe>
+							<div class="search-location-div">
+								<div class="left-content-location">
+									<h6>Find Us on Map</h6>
+									<p>Gaarage Locator</p>
+								</div>
+								<div class="right-content-location">
+									<form class="what-u-looking" action="#">
+										<input type="text" placeholder="What are you looking..." name="search">
+										<button type="submit"><i class="fa fa-search"></i>
+										</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="map-left-div" style="width: 100%; overflow: hidden; height: 260px;">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7116.181292616879!2d75.7318367259854!3d26.900618150447908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db4bd31498575%3A0x4aca340be2184f84!2sChitrakoot%2C%20Jaipur%2C%20Rajasthan!5e0!3m2!1sen!2sin!4v1638417063230!5m2!1sen!2sin" width="100%" height="410" style="border:0; margin-top: -150px;" scrolling="no" frameborder="0" 
+							allowfullscreen="" loading="lazy"></iframe>
+							<div class="search-location-div">
+								<div class="left-content-location">
+									<h6>Find Us on Map</h6>
+									<p>Tyres Locater</p>
+								</div>
+								<div class="right-content-location">
+									<form class="what-u-looking" action="#">
+										<input type="text" placeholder="What are you looking..." name="search">
+										<button type="submit"><i class="fa fa-search"></i>
+										</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- find on map section end -->
+		<!-- footer section start -->
+		<footer>
+			<div class="container">
+				<div class="footer-top">
+					<div class="row">
+						<div class="sm-12 col-md-6 col-lg-3">
+							<div class="footer-divs footer-first-div">
+								<figure>
+									<img src="./img/footer-main-logo.png" alt="">
+								</figure>
+								<p>Gaarage Guru is technology based platform providing vehicle repair,service ,Insurance claim assistance, breakdown.End to end solution provider for all vehicles related problems through our approved channel partners.</p>
+								<div class="social-icons">
+									<h6>Social Media</h6>
+									<div class="social-links">
+										<ul>
+											<li>
+												<a href="#">
+													<img src="./img/facebook-icon.png" alt="">
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<img src="./img/instagram-icon.png" alt="">
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<img src="./img/twitter-icon.png" alt="">
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<img src="./img/youtube-icon.png" alt="">
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sm-12 col-md-6 col-lg-3">
+							<div class="footer-divs footer-div-lasts footer-middle-div">
+								<h6>Contact Us</h6>
+								<div class="contact-div">
+									<ul>
+										<li>
+											<figure>
+												<img src="./img/address-icon.png" alt="">
+											</figure> <span><strong>Address</strong> <br>
+                                        Registered Office : B1/521 Chitrakoot Yojna, Vaishali Nagar, Jaipur, (Raj.)-302021
+                                    </span>
+										</li>
+										<li>
+											<figure>
+												<img src="./img/email-icon.png" alt="">
+											</figure> <span><strong>Email</strong><br>
+                                    <a href="mailto:support@gaarageguru.com">support@gaarageguru.com</a>
+                                    </span>
+										</li>
+										<li>
+											<figure>
+												<img src="./img/phone-icon.png" alt="">
+											</figure> <span><strong>Phone</strong> <br><a href="tel:74259 16088">+91 74259 16088</a></span>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="sm-12 col-md-6 col-lg-3">
+							<div class="footer-divs footer-div-lasts footer-middle-div">
+								<h6>Important Links</h6>
+							</div>
+						</div>
+						<div class="sm-12 col-md-6 col-lg-3 footer-div-lasts">
+							<div class="footer-divs">
+								<h6>Join the Team</h6>
+								<div class="join-team">
+									<form action="#" class="join-team-form">
+										<input type="text" placeholder="Name">
+										<br>
+										<input type="text" placeholder="Mobile Number">
+										<br>
+										<input type="text" placeholder="Location">
+										<br>
+										<input type="text" placeholder="PIN Code">
+										<br>
+										<button>Go</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="footer-bottom">
+				<p>© 2021 Gaarage Guru | Design & Developed by Founder Infotech Private Limited</p>
+			</div>
+		</footer>
+		<!-- footer section end -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			if($('.owl-carousel').length>0)
+			    {
+			        $('.owl-carousel').owlCarousel({
+			        loop:true,
+			        margin:16,
+			        nav:true,
+			        dots:false,
+			        responsive:{
+			            0:{
+			                items:1
+			            },
+			            576:{
+			                items:2
+			            },
+			            1000:{
+			                items:4
+			            }
+			        }
+			      })
+			    }
+			  $(document).ready(function(){
+			    
+			
+			  });
+		</script>
+	</body>
+
+</html>
