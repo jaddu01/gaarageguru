@@ -187,36 +187,7 @@
                                 <p>Founder & Director Operations</p>
                             </div>
                         </div>
-                        <div class="item">
-                            <div>
-{{--                                <img src="{{asset("public/img/team2.png")}}" alt="">--}}
-                            </div>
-                            <div class="team-content">
-                                <h6>Abhishek Sawal</h6>
-                                <p>Founder & Director Operations</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div>
-{{--                                <img src="{{asset("public/img/team3.png")}}" alt="">--}}
-                            </div>
-                            <div class="team-content">
-                                <h6>Abhishek Sawal</h6>
-                                <p>Founder & Director Operations</p>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div>
-{{--                                <img src="{{asset("public/img/team2.png")}}" alt="">--}}
-                            </div>
-                            <div class="team-content">
-                                <h6>Abhishek Sawal</h6>
-                                <p>Founder & Director Operations</p>
-                            </div>
-                        </div>
                     </div>
-
-
                 </div>
             </div>
         </div>

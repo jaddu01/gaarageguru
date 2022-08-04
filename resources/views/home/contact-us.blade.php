@@ -13,46 +13,67 @@
              </div>
              <div class="get-in-touch-inner">
                  <div class="contact-inner-form-div">
-                     <form id="contact_form" method="post" class="garrage-main-form" action="" enctype="multipart/form-data">
-                         <div class="row">
+                    @if(session()->has('message'))
+                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                            {{ session()->get('message') }}
+                        </div>
+                    @endif
+                     <form id="contact_form" method="post" class="garrage-main-form" action="{{route('saveContactUs')}}" enctype="multipart/form-data">
+                        @csrf()
+                        <div class="row">
                              <div class="col-sm-6">
                                  <div class="form-group ">
-                                     <input type="text" class="form-control" id="full_name1" placeholder="Full Name" name="full_name">
+                                     <input type="text" class="form-control" id="full_name1" value="{{old('full_name','')}}" placeholder="Full Name" name="full_name">
                                      <span class="help-inline"></span>
                                  </div>
+                                 @error('full_name')
+                                    <div class="alert alert-danger">{{ $message }}</div>
+                                @enderror
                              </div>
                              <div class="col-sm-6">
                                  <div class="form-group ">
-                                     <input type="text" class="form-control" id="phone_number1" placeholder="Phone Number" name="phone_number">
+                                     <input type="text" class="form-control" id="phone_number1" value="{{old('phone_number','')}}" placeholder="Phone Number" name="phone_number">
                                      <span class="help-inline"></span>
                                  </div>
+                                 @error('phone_number')
+                                    <div class="alert alert-danger">{{ $message }}</div>
+                                @enderror
                              </div>
                              <div class="col-sm-6">
                                  <div class="form-group ">
-                                     <input type="email" class="form-control" id="email1" placeholder="E-mail" name="email">
+                                     <input type="email" class="form-control" id="email1" value="{{old('email','')}}" placeholder="E-mail" name="email">
                                      <span class="help-inline"></span>
                                  </div>
+                                 @error('email')
+                                 <div class="alert alert-danger">{{ $message }}</div>
+                             @enderror
                              </div>
                              <div class="col-sm-6">
                                  <div class="form-group select-option-arrow-img ">
                                      <select class="form-control form-select" aria-label="Default select example" id="service1" name="service">
                                          <option selected="" value="">Select Service Type</option>
-                                         <option value="Free">Free</option>
-                                         <option value="Paid">Paid</option>
+                                         <option value="Free" {{old('service') == 'Free' ? 'selected' : ''}}>Free</option>
+                                         <option value="Paid" {{old('service') == 'Paid' ? 'selected' : ''}}>Paid</option>
 
                                      </select>
                                      <span class="help-inline"></span>
                                  </div>
+                                 @error('service')
+                                 <div class="alert alert-danger">{{ $message }}</div>
+                             @enderror
                              </div>
                              <div class="col-12">
                                  <div class="form-group ">
-                                     <textarea class="form-control" id="message1" placeholder="Message*" rows="6" name="message"></textarea>
+                                     <textarea class="form-control" id="message1" placeholder="Message*" rows="6" name="message">{{old('message','')}}</textarea>
                                      <span class="help-inline"></span>
                                  </div>
+                                 @error('message')
+                                 <div class="alert alert-danger">{{ $message }}</div>
+                             @enderror
                              </div>
                              <div class="col-12">
                                  <div class="all-btn-sec">
-                                     <a href="#">Contact Us</a>
+                                     <button type="submit">Contact Us</button>
                                  </div>
                              </div>
                          </div>

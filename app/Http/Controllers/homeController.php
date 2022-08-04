@@ -33,6 +33,7 @@ use App\CustomField;
 use App\Role;
 use App\Role_user;
 use App\Helpers;
+use App\Enquiry;
 use Config;
 use Session;
 use URL;
@@ -47,6 +48,16 @@ class homeController extends Controller {
 	public function index()
 	{
 	   try{
+
+        // $response = Http::post('https://garrageguru.pos.coverfox.com/partners/register-partner-pos/', [
+        //     'mobile' => '8936373637,',
+        //     'email' => 'admin@gmail.com',
+        //     'pincode' => '111111',
+        //     'name' => 'admin',
+        //     'aadhar' => '6787373837383',
+        // ]);
+
+
 			$title = "gaarageguru";
 
 			}catch (\Exception $e) {
@@ -92,6 +103,24 @@ class homeController extends Controller {
 			}
 		return  View::make("home.contact-us",compact('title'));
 	}
+
+    public function saveContactUs(Request $request)
+	{
+        $input = $request->only(['full_name','phone_number','email','service','message']);
+        $validator = $request->validate([
+            'full_name' => 'required|min:3|max:50',
+            'phone_number'=> 'required|min:10|max:13|regex:/[0-9]{9}/',
+            'email' => 'required|email',
+            'service' => 'required',
+            'message' => 'required|min:3',
+        ]);
+
+        Enquiry::create($input);
+
+        return back()->with(["message"=>"Enquiry has been sent. Our representative will connect you soon."]);
+	}
+
+
 
 	public function career()
 	{

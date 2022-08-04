@@ -947,6 +947,21 @@ bottom: 150px;
     background: #fbab43;
     color: #fff;
 }
+.all-btn-sec button{
+    font-size: 16px;
+    letter-spacing: 0px;
+    color: #2d2d2d;
+    font-weight: 500;
+    font-family: "Poppins";
+    text-align: center;
+    border: 1px solid #fbab43;
+    padding: 11px 36px;
+    text-decoration: none;
+}
+.all-btn-sec button:hover {
+    background: #fbab43;
+    color: #fff;
+}
 .looking-inner img{
     width: 64%;
     max-height: 80px;
